@@ -1,0 +1,247 @@
+p {
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+.filter {
+    width: 100%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .filter {
+        text-align: center !important;
+    }
+}
+
+.sort {
+    float: left;
+    display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sort {
+        float: none !important;
+    }
+}
+
+.search {
+    float: right;
+    margin-bottom: 20px;
+    display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+    .search {
+        float: none !important;
+    }
+}
+
+.search input {
+    padding: 1em;
+    width: 212px;
+    border: 1px solid #3F92A8;
+    margin-top: 10px;
+    outline: none;
+    text-indent: 32px;
+}
+
+.search .fa-search { 
+    position: relative;
+    top: 2px;
+    left: 30px;
+    color: #3F92A8;
+}
+
+.search-clear {
+    position: relative;
+    left: -22px;
+    top: 2px;
+    cursor: pointer;
+    color: #3F92A8 !important;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #303030;
+    font-size: 0.9em;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.search-clear:hover {
+    color: #293A56 !important;
+}
+
+.buy:before {
+    content: "\f07a \00a0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.download:before {
+	content: "\f019 \00a0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+ * {
+	 box-sizing: border-box;
+}
+
+table {
+    font-family: Helvetica, Arial, Sans-Serif;
+	width: 100%;
+    color: #333;
+}
+table th {
+	 text-align: left;
+	 border-bottom: 1px solid #ccc;
+}
+table th, table td {
+	 padding: 0.4em;
+}
+.category {
+    width: 175px;
+}
+table.fold-table > tbody > tr td {
+    padding: 0.6em;
+}
+table.fold-table > tbody > tr.odd {
+    background: #fff;
+}
+table.fold-table > tbody > tr.even {
+    background: #eee;
+}
+table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
+	 cursor: pointer;
+}
+table.fold-table > tbody > tr.view td:first-child, table.fold-table > tbody > tr.view th:first-child {
+	 position: relative;
+	 padding-left: 20px;
+}
+table.fold-table > tbody > tr.view td:first-child:before, table.fold-table > tbody > tr.view th:first-child:before {
+	 position: absolute;
+	 top: 50%;
+	 left: 5px;
+	 width: 9px;
+	 height: 16px;
+	 margin-top: -8px;
+	 color: #999;
+	 content: "\f0da";
+     font-family: "Font Awesome 5 Free";
+     font-weight: 700;
+     font-size: inherit;
+     text-rendering: auto;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     transform: translate(0, 0);
+	 transition: all 0.3s ease;
+}
+table.fold-table > tbody > tr.view:nth-child(4n-1) {
+	 background: #eee;
+}
+table.fold-table > tbody > tr.view:hover {
+    color: #fff;
+    background: #3f92a8;;
+}
+table.fold-table > tbody > tr.view.open {
+	 background: #3f92a8;
+	 color: #fff;
+}
+table.fold-table > tbody > tr.view.open td:first-child:before, table.fold-table > tbody > tr.view.open th:first-child:before {
+	 transform: rotate(90deg);
+	 color: #333;
+}
+table.fold-table > tbody > tr.fold {
+	 display: none;
+}
+table.fold-table > tbody > tr.fold.open {
+	 display: table-row;
+}
+.fold-content {
+    padding: 1em 0.6em 0.6em 0.6em;
+    line-height: 1.5em;
+    background: #eee;
+}
+.fold-content h3 {
+	 margin-top: 0;
+}
+.fold-content > table {
+	 border: 2px solid #ccc;
+}
+.fold-content > table > tbody tr:nth-child(even) {
+	 background: #eee;
+}
+.speaker-name {
+    color: #3F92A8;
+    font-size: 1.5em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 7px;
+    text-decoration: none !important;
+}
+.speaker-title {
+    font-family: Helvetica, Arial, Sans-Serif;
+    margin-top: 1em;
+    font-size: 1em;
+    color: #303030;
+    padding: 7px;
+}
+.speaker-company {
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 1em;
+    color: #303030;
+    padding: 5px 7px 15px 7px;
+}
+.speaker-bio {
+    line-height: 1.5em;
+}
+.speaker-show {
+    display: inherit;
+}
+.speaker-hide {
+    display: none;
+}
+
+.feather-hide {
+    display: none;
+}
+
+/* Webinar Button */
+div.webinar-btn {
+    width: 175px;
+    background: #3F92A8 !important;
+    margin: 20px auto;
+    font-weight: 900;
+    text-align: center;
+}
+div.webinar-btn a {
+    display: block !important;
+    font-family: Helvetica, Arial, Sans-Serif;
+    color: #ffffff !important;
+    font-size: 1em !important;
+    padding: 15px 25px 15px 25px !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+div.webinar-btn a:link {
+    display: block;
+    color: #ffffff !important;
+}
+div.webinar-btn a:visited {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+div.webinar-btn a:hover {
+    text-decoration: none !important;
+}
+div.webinar-btn:hover {
+    background: #337688 !important;
+    text-decoration: none !important;
+}
+ 
